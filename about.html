@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Dimas Company</h1>
+            <ul>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contact.html">Contact Us</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="about.html">About Us</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="blog.html">Blog</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="todos.html">Todos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div id="aboutContent" class="about-content">
+            <p>Selamat datang di Dimas Company! Kami adalah perusahaan yang berfokus pada memberikan solusi jasa terbaik
+                untuk kebutuhan Anda. Dengan pengalaman bertahun-tahun, kami berkomitmen untuk memberikan layanan yang
+                berkualitas tinggi dan memenuhi ekspektasi pelanggan.</p>
+
+            <p>Tim kami terdiri dari profesional yang berdedikasi dalam berbagai bidang, siap membantu Anda dalam
+                mencapai tujuan dan keberhasilan. Kami percaya bahwa kerjasama yang baik dengan pelanggan adalah kunci
+                kesuksesan bersama.</p>
+
+            <p>Terima kasih atas kepercayaan Anda kepada Dimas Company. Jangan ragu untuk menghubungi kami jika Anda
+                memiliki pertanyaan atau membutuhkan bantuan.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Lokasi: Dimas Company, DKI Jakarta, Jakarta</p>
+        <p>Sosial Media:
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>,
+            <a href="https://twitter.com/" target="_blank">Twitter</a>,
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; 2024 Dimas Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        var aboutData = {
+            companyName: 'Dimas Company',
+            mission: 'Our mission is to provide high-quality services...',
+            values: ['Quality', 'Innovation', 'Customer Satisfaction'],
+            
+        };
+
+        var aboutContent = document.getElementById('aboutContent');
+
+        
+        if (aboutContent) {
+            aboutContent.innerHTML += `<p><strong>${aboutData.companyName}</strong></p>`;
+            aboutContent.innerHTML += `<p>${aboutData.mission}</p>`;
+            aboutContent.innerHTML += '<p><strong>Our Values:</strong></p>';
+            
+           
+            aboutData.values.forEach(function(value) {
+                aboutContent.innerHTML += `<li>${value}</li>`;
+            });
+        }
+    </script>
+
+</body>
+
+</html>

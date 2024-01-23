@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimas Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="magnific-popup.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Dimas Company</h1>
+            <ul>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">Home</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="contact.html">Contact Us</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="about.html">About Us</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="blog.html">Blog</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="todos.html">Todos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Silakan hubungi kami melalui formulir di bawah ini:</p>
+
+        <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <footer>
+        <p>Lokasi: Dimas Company, DKI Jakarta, Jakarta</p>
+        <p>Sosial Media:
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>,
+            <a href="https://twitter.com/" target="_blank">Twitter</a>,
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+        <p>&copy; 2024 Dimas Company. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                alert('Harap lengkapi semua kolom formulir.');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>
